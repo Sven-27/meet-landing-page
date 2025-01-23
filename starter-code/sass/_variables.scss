@@ -10,9 +10,9 @@ $slate-300: #D1D1DF;
 $slate-600: #87879D;
 $slate-900: #28283D;
 
-// spaoing
-$s-50: .25rem;
-$s-100: .5rem;
+// spacing
+$s-50: 0.25rem;
+$s-100: 0.5rem;
 $s-200: 1rem;
 $s-300: 1.5rem;
 $s-400: 2rem;
@@ -29,7 +29,7 @@ $ff-rhd: 'Red Hat Display', sans-serif;
 // font sizes
 $fs-100: 1rem;
 $fs-200: 1.125rem;
-$fs-300: 12.5rem;
+$fs-300: 2.5rem;
 $fs-400: 4rem;
 
 // font weights
@@ -39,4 +39,11 @@ $fw-500: 500;
 $fw-600: 600;
 $fw-700: 700;
 $fw-900: 900;
+
+// line heights
+$lh-100: 1.1;
+$lh-500: 1.5;
+
+//letter spacing
+$ls-400: 0.25rem;
 

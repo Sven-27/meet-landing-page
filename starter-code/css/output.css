@@ -47,4 +47,11 @@ body {
   min-height: 100vh;
 }
 
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: clamp(76px, 10vw, 108px);
+}
+
 /*# sourceMappingURL=output.css.map */

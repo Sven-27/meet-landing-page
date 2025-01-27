@@ -9,10 +9,9 @@
 
 // setting global styles
 body{
-  // font-family: $ff-rhd;
-  font-size: 32px;
-  line-height: 1.1;
-  color: $cyan-600;
-  background-color: black;
+  font-family: $ff-rhd;
+  line-height: $lh-100;
+  color: $slate-900;
+  background-color: $white;
   min-height: 100vh;
 }

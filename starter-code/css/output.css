@@ -1,6 +1,8 @@
 .text-preset-1 {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.1;
+  font-weight: 900;
+  width: 10ch;
 }
 
 .text-preset-2 {
@@ -37,10 +39,10 @@
 }
 
 body {
-  font-size: 32px;
+  font-family: "Red Hat Display", sans-serif;
   line-height: 1.1;
-  color: #4D96A9;
-  background-color: black;
+  color: #28283D;
+  background-color: #FAFAFA;
   min-height: 100vh;
 }
 

@@ -53,5 +53,15 @@ body header {
   align-items: flex-end;
   height: clamp(76px, 10vw, 108px);
 }
+body .hero {
+  background: url("../assets/tablet/image-hero.png") no-repeat center center/cover;
+  margin-left: -1.5rem;
+  width: calc(100% + 2.5rem);
+  aspect-ratio: 2.7/1;
+  margin-block: 4.5rem;
+}
+body main img {
+  width: 100px;
+}
 
 /*# sourceMappingURL=output.css.map */

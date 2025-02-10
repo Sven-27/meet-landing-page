@@ -55,18 +55,35 @@ body header {
 }
 body .hero {
   width: 100%;
-  aspect-ratio: 2.5/1;
+  aspect-ratio: 2.4/1;
   overflow: hidden;
   position: relative;
+  margin-block: 4rem;
 }
 body .hero::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -1.5rem;
-  right: -1.5rem;
+  left: -1.7rem;
+  right: -1.7rem;
   height: 100%;
   background: url("../assets/tablet/image-hero.png") no-repeat center/cover;
+}
+@media only screen and (min-width: 550px) {
+  body .hero::before {
+    left: 0;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 550px) {
+  body .hero {
+    aspect-ratio: 2.6/1;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  body .hero {
+    display: none;
+  }
 }
 body main img {
   width: 100px;

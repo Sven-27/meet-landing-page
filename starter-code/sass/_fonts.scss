@@ -3,11 +3,13 @@
   line-height: $lh-100;
   font-weight: $fw-900;
   width: 10ch;
+  text-align: center;
 }
 
 .text-preset-2{
   font-size: $fs-300;
   line-height: $lh-100;
+  text-align: center;
 }
 
 .text-preset-3{
@@ -17,11 +19,14 @@
   letter-spacing: $ls-400;
   color: $cyan-600;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .text-preset-4{
   font-size: $fs-200;
-  line-height: $lh-100;
+  line-height: $lh-500;
+  text-align: center;
+  color: $slate-600
 }
 
 .text-preset-5{
@@ -29,4 +34,5 @@
   line-height: $lh-500;
   font-weight: $fw-700;
   font-weight: 700;
+  text-align: center;
 }

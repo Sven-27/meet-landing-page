@@ -95,7 +95,7 @@ body .hero::before {
   }
 }
 body main {
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 body main img {
   width: 100px;
@@ -104,6 +104,16 @@ body main section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+body main section.section-hero {
+  margin-bottom: 7rem;
+}
+body main section.section-hero div.btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 /*# sourceMappingURL=output.css.map */

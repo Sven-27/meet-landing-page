@@ -34,7 +34,8 @@ body{
     }
   }
   main{
-    padding-inline: $s-400;
+    padding-inline: $s-200;
+    // background: red;
 
     img{
       width: 100px;
@@ -43,6 +44,19 @@ body{
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      &.section-hero{
+        margin-bottom: $s-1400;
+      div.btn-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $s-200;        
+        margin-top: $s-300;
+        
+      }
     }
+    }
+
   }
 }

@@ -1,0 +1,321 @@
+.text-preset-1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.1;
+  font-weight: 900;
+  width: 10ch;
+  text-align: center;
+}
+
+.text-preset-2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.text-preset-3 {
+  font-size: clamp(0.75rem, 4vw, 1rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0.25rem;
+  color: #4D96A9;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text-preset-4 {
+  font-size: clamp(1rem, 5vw, 1.125rem);
+  line-height: 1.5;
+  text-align: center;
+  color: #87879D;
+}
+
+.text-preset-5 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  font-weight: 700;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.1;
+  color: #28283D;
+  background-color: #FAFAFA;
+  min-height: 100vh;
+}
+body h1 {
+  margin-bottom: 1.5rem;
+}
+body a {
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  color: #FAFAFA;
+  border-radius: 2.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+body .number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .number hr {
+  width: 1px;
+  height: 5rem;
+  background-color: #D1D1DF;
+  border: none;
+}
+body .number .digit {
+  font-weight: 900;
+  color: #87879D;
+  border: 1px solid #D1D1DF;
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FAFAFA;
+}
+
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: clamp(76px, 10vw, 108px);
+}
+@media only screen and (width >= 1200px) {
+  body header {
+    margin-bottom: 4.5rem;
+  }
+}
+body .hero {
+  width: 100%;
+  aspect-ratio: 2.4/1;
+  overflow: hidden;
+  position: relative;
+  margin-block: 4rem;
+}
+body .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1.7rem;
+  right: -1.7rem;
+  height: 100%;
+  background: url("../assets/tablet/image-hero.png") no-repeat center/cover;
+}
+@media only screen and (min-width: 550px) {
+  body .hero::before {
+    left: 0;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 550px) {
+  body .hero {
+    aspect-ratio: 2.6/1;
+  }
+}
+@media only screen and (width >= 1200px) {
+  body .hero {
+    display: none;
+  }
+}
+body main {
+  padding-inline: 1rem;
+  margin-bottom: 7rem;
+}
+body main img {
+  width: 100px;
+}
+body main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section.section-hero {
+  margin-bottom: 5rem;
+  position: relative;
+}
+@media only screen and (width >= 550px) {
+  body main section.section-hero p {
+    max-width: 40ch;
+  }
+}
+@media only screen and (width >= 1200px) {
+  body main section.section-hero p {
+    width: 35ch;
+  }
+  body main section.section-hero:before {
+    content: url("../assets/desktop/image-hero-left.png") "";
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+  }
+  body main section.section-hero:after {
+    content: url("../assets/desktop/image-hero-right.png") "";
+    position: absolute;
+    top: 3rem;
+    right: -3rem;
+  }
+}
+body main section.section-hero div.btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+@media only screen and (width >= 550px) {
+  body main section.section-hero div.btn-group {
+    flex-direction: row;
+  }
+}
+body main section.section-hero div.btn-group a {
+  background: #855FB1;
+}
+body main section.section-hero div.btn-group a:hover, body main section.section-hero div.btn-group a:focus, body main section.section-hero div.btn-group a:active {
+  background: #b188dd;
+}
+body main section.section-hero div.btn-group a[download] {
+  background: #4D96A9;
+}
+body main section.section-hero div.btn-group a[download]:hover, body main section.section-hero div.btn-group a[download]:focus, body main section.section-hero div.btn-group a[download]:active {
+  background: #71c0d4;
+}
+body main section.section-hero div.btn-group a span {
+  color: #8FE3F9;
+}
+body main section.section-main .gallery {
+  padding-block: 4.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+body main section.section-main .gallery img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+@media only screen and (min-width: 700px) {
+  body main section.section-main .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+body main section.section-main .paragraph-title {
+  padding-block: 2rem;
+  max-width: 14ch;
+}
+@media (width >= 768px) {
+  body main section.section-main .paragraph-title {
+    max-width: 18ch;
+  }
+}
+@media (width >= 1440px) {
+  body main section.section-main .paragraph-title {
+    max-width: 16ch;
+  }
+}
+@media screen and (width >= 600px) {
+  body main section.section-main .paragraph-content {
+    width: 47ch;
+  }
+}
+@media screen and (width >= 1200px) {
+  body main section.section-main .paragraph-content {
+    width: 45ch;
+  }
+}
+body footer {
+  position: relative;
+  margin-top: 175px;
+  background: rgba(77, 151, 169, 0.8705882353);
+  color: #FAFAFA;
+  padding: 4.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body footer:after {
+  content: "";
+  background: url("../assets/mobile/image-footer.jpg") no-repeat center center/cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0 !important;
+  z-index: -1;
+}
+@media only screen and (width >= 600px) {
+  body footer:after {
+    background: url("../assets/tablet/image-footer.jpg") no-repeat;
+  }
+}
+@media only screen and (width >= 910px) {
+  body footer:after {
+    background: url("../assets/desktop/image-footer.jpg") no-repeat;
+  }
+}
+body footer .number {
+  position: absolute;
+  top: -6.75rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #D1D1DF;
+}
+body footer a[download] {
+  background: #855FB1;
+  width: max-content;
+  color: #FAFAFA;
+}
+body footer a[download]:hover, body footer a[download]:focus, body footer a[download]:active {
+  background: #b188dd;
+}
+body footer a[download] span {
+  color: #D9B8FF;
+}
+body footer p {
+  color: #FAFAFA !important;
+  margin-block: 1.5rem;
+}
+@media only screen and (width >= 768px) {
+  body footer p {
+    width: 47ch;
+  }
+}
+@media only screen and (width >= 1200px) {
+  body footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer h2 {
+    width: 14ch;
+    text-align: left !important;
+  }
+  body footer p {
+    width: 30ch;
+    text-align: left !important;
+  }
+  body footer a {
+    margin-top: -1rem;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

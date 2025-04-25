@@ -1,0 +1,56 @@
+// simple reset
+*, 
+*::before, 
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// setting global styles
+body{
+  font-family: $ff-rhd;
+  line-height: $lh-100;
+  color: $slate-900;
+  background-color: $white;
+  min-height: 100vh;
+
+  h1{
+    margin-bottom: $s-300;
+  }
+
+  a{
+    padding: $s-200 $s-500;
+    text-decoration: none;
+    color: $white;
+    border-radius: $s-500;
+    display: flex;
+    gap: $s-100;
+  }
+
+  .number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    hr{
+      width: 1px;
+      height: 5rem;
+      background-color: $slate-300;
+      border: none;
+    }
+
+    .digit{
+      font-weight: $fw-900;
+      color: $slate-600;
+      border: 1px solid $slate-300;
+      width: 3.5rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $white;
+    }
+  }
+}

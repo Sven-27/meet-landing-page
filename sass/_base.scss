@@ -1,0 +1,236 @@
+body{
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: clamp(76px, 10vw, 108px);
+
+    @media only screen and (width >= 1200px){
+     margin-bottom: $s-900;
+    }
+  }
+  .hero{
+    width: 100%;
+    aspect-ratio: 2.4/1;
+    overflow: hidden;
+    position: relative;
+    margin-block: $s-800;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -1.7rem;
+      right: -1.7rem;
+      height: 100%;
+      background: url('../assets/tablet/image-hero.png') no-repeat center/cover;
+
+      @media only screen and (min-width: 550px){
+        left: 0;
+        right: 0;
+      }
+    }
+    @media only screen and (min-width: 550px) {
+      aspect-ratio: 2.6/1;
+    }
+    @media only screen and (width >= 1200px){
+      display: none;
+    }
+  }
+  main{
+    padding-inline: $s-200;
+    margin-bottom: $s-1400;
+
+    img{
+      width: 100px;
+    }
+    section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &.section-hero{
+        margin-bottom: $s-1000;
+        position: relative;
+
+        @media only screen and (width >= 550px){
+          p{
+            max-width: 40ch;
+          }
+        }
+        @media only screen and (width >= 1200px) {
+    
+          p {
+            width: 35ch;
+          }
+          &:before{
+            content: url('../assets/desktop/image-hero-left.png')'';  
+            position: absolute;
+            top: -3rem;
+            left: -3rem;
+
+          }
+          &:after {
+            content: url('../assets/desktop/image-hero-right.png')'';
+            position: absolute;
+            top: 3rem;
+            right: -3rem;
+          }
+        }
+        
+        div.btn-group{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: $s-200;        
+          margin-top: $s-300;
+
+          @media only screen and (width >= 550px) {
+            flex-direction: row;
+            }
+          
+          a{
+            background: $purple-600;
+
+            &:hover,
+              &:focus,
+              &:active {
+                background: $purple-hover-300;
+              }
+            &[download]{
+              background: $cyan-600;
+
+              &:hover,
+                &:focus,
+                &:active {
+                  background: $cyan-hover-300;
+                }
+            }
+
+            span{
+              color: $cyan-300;
+            }
+          }
+        }
+      }
+      &.section-main{
+        .gallery{
+          padding-block: $s-900;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: $s-300;
+
+          img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            border-radius: $s-200;
+            object-fit: cover;
+          }
+
+          @media only screen and (min-width: 700px){
+            grid-template-columns: repeat(4, 1fr);
+          }
+        }
+        .paragraph-title{
+          padding-block: $s-400;
+          max-width: 14ch;
+
+          @media (width >= 768px){
+            max-width: 18ch;
+          }
+          @media (width >= 1440px) {
+            max-width: 16ch;
+          }
+        }
+        @media screen and (width >= 600px){
+          .paragraph-content {
+              width: 47ch;
+            }
+        }
+        @media screen and (width >=1200px) {
+          .paragraph-content {
+            width: 45ch;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    position: relative;
+    margin-top: 175px;
+    background: $cyan-opacity-600;
+    color: $white;
+    padding: $s-900 $s-200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:after{
+      content: '';
+      background: url('../assets/mobile/image-footer.jpg') no-repeat center center/cover;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+     width: 100%;
+      bottom: 0 !important;
+      z-index: -1;
+
+      @media only screen and (width >= 600px){
+        background: url('../assets/tablet/image-footer.jpg') no-repeat;
+      }
+      @media only screen and (width >=910px) {
+        background: url('../assets/desktop/image-footer.jpg') no-repeat;
+      }
+    }
+
+    .number{
+      position: absolute;
+      top: -6.75rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: $fs-100;
+      font-weight: $fw-400;
+      color: $slate-300;
+    }
+    a[download]{
+      background: $purple-600;
+      width: max-content;
+      color: $white;
+
+      &:hover, &:focus, &:active{
+        background: $purple-hover-300;
+      }
+
+      span{
+        color: $purple-300;
+      }
+    }
+    p{
+      color: $white !important;
+      margin-block: $s-300;
+
+      @media only screen and (width >= 768px){
+        width: 47ch;
+      }
+    }
+    @media only screen and (width >= 1200px){
+      flex-direction: row;
+      justify-content: space-around;
+
+      h2{
+        width: 14ch;
+        text-align: left !important;
+      }
+      p{
+        width: 30ch;
+        text-align: left !important;
+      }
+      a{
+        margin-top: -1rem;
+      }
+    }
+  }
+}

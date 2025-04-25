@@ -1,0 +1,39 @@
+.text-preset-1{
+  font-size: clamp($fs-400, 4vw, $fs-500);
+  line-height: $lh-100;
+  font-weight: $fw-900;
+  width: 10ch;
+  text-align: center;
+}
+
+.text-preset-2{
+  font-size: clamp($fs-300, 4vw, $fs-400);
+  font-weight: $fw-900;
+  line-height: $lh-100;
+  text-align: center;
+}
+
+.text-preset-3{
+  font-size: clamp($fs-50, 4vw, $fs-100);
+  font-weight: $fw-900;
+  line-height: $lh-100;
+  letter-spacing: $ls-400;
+  color: $cyan-600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text-preset-4{
+  font-size: clamp($fs-100, 5vw, $fs-200);
+  line-height: $lh-500;
+  text-align: center;
+  color: $slate-600
+}
+
+.text-preset-5{
+  font-size: $fs-100;
+  line-height: $lh-500;
+  font-weight: $fw-700;
+  font-weight: 700;
+  text-align: center;
+}

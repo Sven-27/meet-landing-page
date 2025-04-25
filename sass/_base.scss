@@ -168,19 +168,19 @@ body{
 
     &:after{
       content: '';
-      background: url('../assets/mobile/image-footer.jpg') no-repeat center center/cover;
-      object-fit: cover;
+      background: url('../assets/mobile/image-footer.jpg') no-repeat;
+      background-size: 100%;
       position: absolute;
       top: 0;
       left: 0;
-     width: 100%;
+      min-width: 100%;
       bottom: 0 !important;
       z-index: -1;
 
       @media only screen and (width >= 600px){
         background: url('../assets/tablet/image-footer.jpg') no-repeat;
       }
-      @media only screen and (width >=910px) {
+      @media only screen and (width >=1200px) {
         background: url('../assets/desktop/image-footer.jpg') no-repeat;
       }
     }
@@ -232,5 +232,6 @@ body{
         margin-top: -1rem;
       }
     }
+
   }
 }

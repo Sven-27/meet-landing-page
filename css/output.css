@@ -53,11 +53,26 @@ body {
   background-color: #FAFAFA;
   min-height: 100vh;
   overflow-x: hidden;
+  display: grid;
+  place-items: center;
 }
-body h1 {
+body .container {
+  max-width: 375px;
+}
+@media only screen and (width >= 768px) {
+  body .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (width >= 1440px) {
+  body .container {
+    max-width: 1440px;
+  }
+}
+body .container h1 {
   margin-bottom: 1.5rem;
 }
-body a {
+body .container a {
   padding: 1rem 2.5rem;
   text-decoration: none;
   color: #FAFAFA;
@@ -65,19 +80,19 @@ body a {
   display: flex;
   gap: 0.5rem;
 }
-body .number {
+body .container .number {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-body .number hr {
+body .container .number hr {
   width: 1px;
   height: 5rem;
   background-color: #D1D1DF;
   border: none;
 }
-body .number .digit {
+body .container .number .digit {
   font-weight: 900;
   color: #87879D;
   border: 1px solid #D1D1DF;
@@ -96,7 +111,7 @@ body header {
   align-items: flex-end;
   height: clamp(76px, 10vw, 108px);
 }
-@media only screen and (width >= 1200px) {
+@media only screen and (width >= 1440px) {
   body header {
     margin-bottom: 4.5rem;
   }
@@ -117,18 +132,18 @@ body .hero::before {
   height: 100%;
   background: url("../assets/tablet/image-hero.png") no-repeat center/cover;
 }
-@media only screen and (min-width: 550px) {
+@media only screen and (width >= 768px) {
   body .hero::before {
     left: 0;
     right: 0;
   }
 }
-@media only screen and (min-width: 550px) {
+@media only screen and (width >= 768px) {
   body .hero {
     aspect-ratio: 2.6/1;
   }
 }
-@media only screen and (width >= 1200px) {
+@media only screen and (width >= 1440px) {
   body .hero {
     display: none;
   }
@@ -149,12 +164,12 @@ body main section.section-hero {
   margin-bottom: 5rem;
   position: relative;
 }
-@media only screen and (width >= 550px) {
+@media only screen and (width >= 768px) {
   body main section.section-hero p {
     max-width: 40ch;
   }
 }
-@media only screen and (width >= 1200px) {
+@media only screen and (width >= 1440px) {
   body main section.section-hero p {
     width: 35ch;
   }
@@ -178,7 +193,7 @@ body main section.section-hero div.btn-group {
   gap: 1rem;
   margin-top: 1.5rem;
 }
-@media only screen and (width >= 550px) {
+@media only screen and (width >= 768px) {
   body main section.section-hero div.btn-group {
     flex-direction: row;
   }
@@ -210,7 +225,7 @@ body main section.section-main .gallery img {
   border-radius: 1rem;
   object-fit: cover;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (width >= 768px) {
   body main section.section-main .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -229,12 +244,12 @@ body main section.section-main .paragraph-title {
     max-width: 16ch;
   }
 }
-@media screen and (width >= 600px) {
+@media screen and (width >= 768px) {
   body main section.section-main .paragraph-content {
     width: 47ch;
   }
 }
-@media screen and (width >= 1200px) {
+@media screen and (width >= 1440px) {
   body main section.section-main .paragraph-content {
     width: 45ch;
   }
@@ -261,12 +276,12 @@ body footer:after {
   bottom: 0 !important;
   z-index: -1;
 }
-@media only screen and (width >= 600px) {
+@media only screen and (width >= 768x) {
   body footer:after {
     background: url("../assets/tablet/image-footer.jpg") no-repeat;
   }
 }
-@media only screen and (width >= 1200px) {
+@media only screen and (width >= 1440px) {
   body footer:after {
     background: url("../assets/desktop/image-footer.jpg") no-repeat;
   }

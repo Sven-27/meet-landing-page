@@ -5,7 +5,7 @@ body{
     align-items: flex-end;
     height: clamp(76px, 10vw, 108px);
 
-    @media only screen and (width >= 1200px){
+    @media only screen and (width >= 1440px){
      margin-bottom: $s-900;
     }
   }
@@ -25,15 +25,15 @@ body{
       height: 100%;
       background: url('../assets/tablet/image-hero.png') no-repeat center/cover;
 
-      @media only screen and (min-width: 550px){
+      @media only screen and (width >= 768px){
         left: 0;
         right: 0;
       }
     }
-    @media only screen and (min-width: 550px) {
+    @media only screen and (width >= 768px) {
       aspect-ratio: 2.6/1;
     }
-    @media only screen and (width >= 1200px){
+    @media only screen and (width >= 1440px){
       display: none;
     }
   }
@@ -53,12 +53,12 @@ body{
         margin-bottom: $s-1000;
         position: relative;
 
-        @media only screen and (width >= 550px){
+        @media only screen and (width >= 768px){
           p{
             max-width: 40ch;
           }
         }
-        @media only screen and (width >= 1200px) {
+        @media only screen and (width >= 1440px) {
     
           p {
             width: 35ch;
@@ -85,7 +85,7 @@ body{
           gap: $s-200;        
           margin-top: $s-300;
 
-          @media only screen and (width >= 550px) {
+          @media only screen and (width >= 768px) {
             flex-direction: row;
             }
           
@@ -127,7 +127,7 @@ body{
             object-fit: cover;
           }
 
-          @media only screen and (min-width: 700px){
+          @media only screen and (width >= 768px){
             grid-template-columns: repeat(4, 1fr);
           }
         }
@@ -142,12 +142,12 @@ body{
             max-width: 16ch;
           }
         }
-        @media screen and (width >= 600px){
+        @media screen and (width >= 768px){
           .paragraph-content {
               width: 47ch;
             }
         }
-        @media screen and (width >=1200px) {
+        @media screen and (width >=1440px) {
           .paragraph-content {
             width: 45ch;
           }
@@ -177,10 +177,10 @@ body{
       bottom: 0 !important;
       z-index: -1;
 
-      @media only screen and (width >= 600px){
+      @media only screen and (width >= 768x){
         background: url('../assets/tablet/image-footer.jpg') no-repeat;
       }
-      @media only screen and (width >=1200px) {
+      @media only screen and (width >=1440px) {
         background: url('../assets/desktop/image-footer.jpg') no-repeat;
       }
     }
